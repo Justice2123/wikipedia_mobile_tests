@@ -87,7 +87,7 @@ ____
 
 ____
 <a id="allureReport"></a>
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_report.svg"> </a> Пример <a target="_blank" href="https://jenkins.autotests.cloud/job/wikipedia_mobile_tests/allure/"> Allure-отчета </a>
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> </a> Пример <a target="_blank" href="https://jenkins.autotests.cloud/job/wikipedia_mobile_tests/allure/"> Allure-отчета </a>
 
 
 
