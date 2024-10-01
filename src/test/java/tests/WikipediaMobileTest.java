@@ -22,6 +22,7 @@ public class WikipediaMobileTest extends TestBase {
     FourthWikiBoardingScreen fourthWikiBoardingPage = new FourthWikiBoardingScreen();
 
     @Test
+    @DisplayName("Проверка стартовых страниц в википедии")
     @Tag("mobile")
     @Severity(NORMAL)
     void WikiBoardingTest() {
