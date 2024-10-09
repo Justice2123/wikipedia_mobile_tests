@@ -13,19 +13,19 @@ public class FourthWikiBoardingScreen {
             doneButtonFourthPage = $(id("org.wikipedia.alpha:id/fragment_onboarding_done_button")),
             headerFourthPage = $(id("org.wikipedia.alpha:id/primaryTextView"));
 
-    @Step("Проверка видимости кнопки 'Начать на четвертой странице'")
+    @Step("проверка видимости кнопки 'Начать на четвертой странице'")
     public FourthWikiBoardingScreen checkDoneButtonFourthPage() {
         doneButtonFourthPage.shouldBe(visible);
         return this;
     }
 
-    @Step("Нажатие на кнопку 'Начать на четвертой странице'")
+    @Step("нажатие на кнопку 'Начать на четвертой странице'")
     public FourthWikiBoardingScreen clickDoneButtonFourthPage() {
         doneButtonFourthPage.click();
         return this;
     }
 
-    @Step("Проверка правильности заголовка")
+    @Step("проверка правильности заголовка")
     public FourthWikiBoardingScreen checkHeaderFourthPage(String value) {
         headerFourthPage.shouldHave(text(value));
         return this;

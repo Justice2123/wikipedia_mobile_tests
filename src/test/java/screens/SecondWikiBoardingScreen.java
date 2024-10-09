@@ -13,19 +13,19 @@ public class SecondWikiBoardingScreen {
             forwardButtonSecondPage = $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")),
             headerSecondPage = $(id("org.wikipedia.alpha:id/primaryTextView"));
 
-    @Step("Проверка видимости кнопки 'Продолжить'")
+    @Step("проверка видимости кнопки 'Продолжить'")
     public SecondWikiBoardingScreen checkOfForwardButtonSecondPage() {
         forwardButtonSecondPage.shouldBe(visible);
         return this;
     }
 
-    @Step("Нажатие на кнопку Продолжить на первой странице")
+    @Step("нажатие на кнопку 'Продолжить на первой странице'")
     public SecondWikiBoardingScreen clickOnForwardButtonSecondPage() {
         forwardButtonSecondPage.click();
         return this;
     }
 
-    @Step("Проверка правильности заголовка")
+    @Step("проверка правильности заголовка")
     public SecondWikiBoardingScreen checkHeaderSecondPage(String value) {
         headerSecondPage.shouldHave(text(value));
         return this;

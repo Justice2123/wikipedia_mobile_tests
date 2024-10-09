@@ -13,19 +13,19 @@ public class FirstWikiBoardingScreen {
             forwardButtonFirstPage = $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")),
             headerFirstPage = $(id("org.wikipedia.alpha:id/primaryTextView"));
 
-    @Step("Проверка видимости кнопки 'Продолжить'")
+    @Step("проверка видимости кнопки 'Продолжить'")
     public FirstWikiBoardingScreen checkOfForwardButtonFirstPage() {
         forwardButtonFirstPage.shouldBe(visible);
         return this;
     }
 
-    @Step("Нажатие на кнопку Продолжить на первой странице")
+    @Step("нажатие на кнопку 'Продолжить на первой странице'")
     public FirstWikiBoardingScreen clickOnForwardButtonFirstPage() {
         forwardButtonFirstPage.click();
         return this;
     }
 
-    @Step("Проверка правильности заголовка")
+    @Step("проверка правильности заголовка")
     public FirstWikiBoardingScreen checkHeaderFirstPage(String value) {
         headerFirstPage.shouldHave(text(value));
         return this;

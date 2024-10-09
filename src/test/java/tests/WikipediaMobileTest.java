@@ -22,7 +22,7 @@ public class WikipediaMobileTest extends TestBase {
     FourthWikiBoardingScreen fourthWikiBoardingPage = new FourthWikiBoardingScreen();
 
     @Test
-    @DisplayName("Проверка стартовых страниц в википедии")
+    @DisplayName("проверка стартовых страниц википедии")
     @Tag("mobile")
     @Severity(NORMAL)
     void WikiBoardingTest() {
@@ -52,7 +52,7 @@ public class WikipediaMobileTest extends TestBase {
     }
 
     @Test
-    @DisplayName("Успешный поиск статьи")
+    @DisplayName("успешный поиск статьи")
     @Tag("mobile")
     @Severity(NORMAL)
     void successfulSearchTest() {
@@ -63,7 +63,7 @@ public class WikipediaMobileTest extends TestBase {
     }
 
     @Test
-    @DisplayName("Проверка открытия страницы со статьей")
+    @DisplayName("проверка открытия страницы со статьей")
     @Tag("mobile")
     @Severity(NORMAL)
     void openingArticleTest() {
@@ -73,15 +73,4 @@ public class WikipediaMobileTest extends TestBase {
         listArticlesPage.clickSuggestionWithText("American rapper and singer (born 1984)");
         mobileArticlePage.checkArticleText("American rapper and singer (born 1984)");
     }
-
-//    @Test
-//    @DisplayName("если перестанут открываться статьи")
-//    @Tag("")
-//    void openArticleTest() {
-//        mainPage.skipWizard();
-//        mainPage.clickSearchWikipedia();
-//        mainPage.enterSearchText("Kid Cudi");
-//        listArticlesPage.openFirstArticle();
-//        mobileArticlePage.checkErrorText("Error");
-//    }
 }

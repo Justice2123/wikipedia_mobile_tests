@@ -13,19 +13,19 @@ public class ThirdWikiBoardingScreen {
             forwardButtonThirdPage = $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")),
             headerThirdPage = $(id("org.wikipedia.alpha:id/primaryTextView"));
 
-    @Step("Проверка видимости кнопки 'Продолжить'")
+    @Step("проверка видимости кнопки 'Продолжить'")
     public ThirdWikiBoardingScreen checkOfForwardButtonThirdPage() {
         forwardButtonThirdPage.shouldBe(visible);
         return this;
     }
 
-    @Step("Нажатие на кнопку Продолжить на первой странице")
+    @Step("нажатие на кнопку 'Продолжить на первой странице'")
     public ThirdWikiBoardingScreen clickOnForwardButtonThirdPage() {
         forwardButtonThirdPage.click();
         return this;
     }
 
-    @Step("Проверка правильности заголовка")
+    @Step("проверка правильности заголовка")
     public ThirdWikiBoardingScreen checkHeaderThirdPage(String value) {
         headerThirdPage.shouldHave(text(value));
         return this;

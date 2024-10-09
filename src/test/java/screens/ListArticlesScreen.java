@@ -9,23 +9,16 @@ import static io.appium.java_client.AppiumBy.id;
 
 public class ListArticlesScreen {
 
-    ElementsCollection listItem = $$(id("org.wikipedia.alpha:id/page_list_item_title")),
-    listArticle = $$(id("org.wikipedia.alpha:id/page_list_item_title")),
+    private final ElementsCollection listArticle = $$(id("org.wikipedia.alpha:id/page_list_item_title")),
     itemDescription = $$(id("org.wikipedia.alpha:id/page_list_item_description"));
 
-    @Step("Проверяем, что список подсказок не пуст")
+    @Step("проверяем, что список подсказок не пуст")
     public void checkSuggestionsSize() {
         listArticle.shouldHave(sizeGreaterThan(0));
     }
 
-    @Step("Кликаем по элементу списка с текстом '{text}'")
+    @Step("кликаем по элементу списка с текстом '{value}'")
     public void clickSuggestionWithText(String value) {
         itemDescription.findBy(text(value)).click();
-    }
-
-    @Step("выбор первой статьи")
-    public ListArticlesScreen openFirstArticle() {
-        listItem.first().click();
-        return this;
     }
 }
